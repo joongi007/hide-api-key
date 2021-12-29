@@ -1,3 +1,5 @@
+const fetch = require("node-fetch");
+
 const { API_KEY } = process.env
 exports.handler = async (event, context) => {
     const lat = event.queryStringParameters.lat;

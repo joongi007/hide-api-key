@@ -1,0 +1,22 @@
+{
+  "name": "hide_api",
+  "version": "1.0.0",
+  "description": "Learn how to use serverless functions in less than 30 minutes!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joongi007/hide-api-key.git"
+  },
+  "author": "joongi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joongi007/hide-api-key/issues"
+  },
+  "homepage": "https://github.com/joongi007/hide-api-key#readme",
+  "devDependencies": {
+    "node-fetch": "^3.1.0"
+  }
+}

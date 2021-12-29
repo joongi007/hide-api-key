@@ -16,7 +16,7 @@
         const fetchBtn = document.getElementById('fetch-btn')
         const responseText = document.getElementById('response-output')
 
-        fetchBtn.addEventListener('click', () => {
+        fetchBtn.addEventListener('click', async () => {
           const response = await fetch('/.netlify/functions/weather').then(
             response => response.json()
           )
