@@ -17,7 +17,7 @@
         const responseText = document.getElementById('response-output')
 
         fetchBtn.addEventListener('click', async () => {
-          const response = await fetch('/.netlify/functions/weather').then(
+          const response = await fetch('/.netlify/functions/weather?lat=43&lon=42').then(
             response => response.json()
           )
           responseText.innerText = response

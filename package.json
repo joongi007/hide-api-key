@@ -10,6 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/joongi007/hide-api-key.git"
   },
+  "type":"module",
   "author": "joongi",
   "license": "MIT",
   "bugs": {
