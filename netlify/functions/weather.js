@@ -1,7 +1,7 @@
-import fetch from "node_modules/node-fetch/lib/index.js";
+const fetch = require("node-fetch");
 
 const API_KEY = process.env.API_KEY
-export async function handler(event, context){
+exports.handler = async function(event, context){
     const lat = event.queryStringParameters.lat;
     const lon = event.queryStringParameters.lon;
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
