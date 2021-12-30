@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/joongi007/hide-api-key#readme",
   "devDependencies": {
+    "encoding": "^0.1.13",
     "node-fetch": "^3.1.0"
   }
 }

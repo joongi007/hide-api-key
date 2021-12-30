@@ -14,7 +14,7 @@ exports.handler = async function(event, context){
             "content-type": "application/json; charset=utf-8",
         },
         statusCode: 200,
-        body: JSON.stringify([url, response, data]),
+        body: JSON.stringify(data),
     }
 }
   
