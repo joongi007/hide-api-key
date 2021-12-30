@@ -1,4 +1,4 @@
-import fetch from "node_modules/node-fetch/@types/index.d.ts";
+import fetch from "node-fetch";
 
 const API_KEY = process.env.API_KEY
 export async function handler(event, context) {
