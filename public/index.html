@@ -20,7 +20,7 @@
           const response = await fetch('/.netlify/functions/weather?lat=43&lon=42').then(
             response => response.json()
           )
-          responseText.innerText = response
+          responseText.innerText = JSON.stringify(response);
         })
       })
     </script>
