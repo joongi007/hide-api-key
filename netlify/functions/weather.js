@@ -1,5 +1,4 @@
 import fetch from "node-fetch";
-const { json } = require("stream/consumers");
 
 const API_KEY = process.env.API_KEY
 exports.handler = async (event, context) => {
