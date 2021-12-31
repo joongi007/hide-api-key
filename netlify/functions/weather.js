@@ -11,6 +11,7 @@ exports.handler = async function(event, context){
 
     return {
         headers: {
+            "Access-Control-Allow-Origin": "*",
             "content-type": "application/json; charset=utf-8",
         },
         statusCode: 200,
