@@ -1,13 +1,13 @@
-const axios = require('axios')
+const axios = require('axios');
 
 exports.handler = async function(event, context){
-    const API_KEY = process.env.API_KEY
+    const API_KEY = process.env.API_KEY;
     const lat = event.queryStringParameters.lat;
     const lon = event.queryStringParameters.lon;
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
     
-    const response = await axios.get(url)
-    const data = await response.data
+    const response = await axios.get(url);
+    const data = await response.data;
 
     return {
         headers: {
@@ -16,5 +16,5 @@ exports.handler = async function(event, context){
         },
         statusCode: 200,
         body: JSON.stringify(data),
-    }
+    };
 }
