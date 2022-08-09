@@ -14,9 +14,9 @@
 
     <script type="module">
       document.addEventListener('DOMContentLoaded', () => {
-        const weatherFetchBtn = document.getElementById('weather-fetch')
+        const weatherFetchBtn = document.getElementById('weather-fetch');
         const aiomokFetchBtn = document.getElementById('aiomok-fetch');
-        const responseText = document.getElementById('response-output')
+        const responseText = document.getElementById('response-output');
 
         weatherFetchBtn.addEventListener('click', async () => {
           const response = await fetch('/.netlify/functions/weather?lat=43&lon=42').then(
